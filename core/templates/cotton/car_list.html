@@ -1,0 +1,8 @@
+<div id='car-list'>
+    <h1 class="text-2xl font-bold mb-4">{{ car_count }} cars available!</h1>
+    {% for car in page_obj %}
+    <c-car-card/>
+    {% endfor %}
+    <c-pagination/>
+</div>
+
